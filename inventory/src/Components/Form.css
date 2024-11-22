@@ -1,0 +1,22 @@
+.form-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin: 1rem 5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+.button {
+  width: 100px;
+  height: 1.8rem;
+  margin: 25px;
+  background-color: lightblue;
+}
