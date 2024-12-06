@@ -3,7 +3,7 @@ import "./Form.css";
 import MedContext from "./Store/Context";
 
 const Form = ({ onAddMed }) => {
-  const medCntxt = useContext(MedContext);
+  //   const medCntxt = useContext(MedContext);
   const [formInputs, setFormInputs] = useState({
     medicineName: "",
     description: "",
@@ -21,9 +21,11 @@ const Form = ({ onAddMed }) => {
       description: formInputs.description,
       price: +formInputs.price,
       quantity: +formInputs.quantity,
+      id: Date.now(),
     };
 
     onAddMed(newMedicine);
+    // setFormInputs;
     // console.log(medCntxt);
   };
   return (

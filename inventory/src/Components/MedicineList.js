@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import MedContext from "./Store/Context";
 
-const List = ({ medicines }) => {
-  const { addToCart } = useContext(MedContext);
+const List = () => {
+  const { addToCart, medicines } = useContext(MedContext);
 
   const handleAddToCart = (med) => {
     if (med.quantity > 0) {
-      addToCart(med); // Add item to cart
-      med.quantity--; // Reduce the available quantity
+      addToCart(med);
+      console.log("cart", med.quantity);
     }
   };
 

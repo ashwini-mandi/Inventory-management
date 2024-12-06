@@ -8,7 +8,7 @@ const Main = () => {
   const onAddMed = (medicine) => {
     medCntx.addMedicines(medicine);
   };
-  //   console.log(medCntx);
+
   return (
     <>
       <div>
